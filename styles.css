@@ -105,7 +105,7 @@ ul {
 
 /* Services Section */
 #services {
-    padding: 120px 60px;
+    padding: 120px 20px;
     background-color: #f5f5f5;
 }
 
@@ -223,210 +223,54 @@ ul {
     color: #555;
 }
 
-/* Availability Section */
-#availability {
-    padding: 80px 20px;
-    background-color: #fff;
-    text-align: center;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .services-container, .features-container, .transport-options {
+        flex-direction: column;
+    }
+
+    .service-card, .feature, .option {
+        min-width: 100%;
+    }
 }
 
-.availability h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #324879;
-}
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
 
-.availability p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-}
+    .hero p {
+        font-size: 16px;
+    }
 
-.availability img {
-    max-width: 100%;
-    height: auto;
-}
+    .hero .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 
-/* Transportation Section */
-.transportation {
-    padding: 80px 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
+    .services-title, .about-container h2 {
+        font-size: 28px;
+    }
 
-.transportation h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #324879;
-}
-
-.transportation p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-.transport-options {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.option {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex: 1;
-    min-width: 250px;
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.option:hover {
-    transform: translateY(-10px);
-}
-
-.icon {
-    width: 350px; /* Increased dimensions */
-    height: 350px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-}
-
-#sea { background-image: url('sea.png'); }
-#land { background-image: url('land.png'); }
-#air { background-image: url('air.png'); }
-
-
-
-/* Contact Section */
-#contact {
-    padding: 80px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #324879;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: auto;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact button {
-    background-color: #F68716;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-#contact button:hover {
-    background-color: #F65D0A;
-}
-
-/* Footer */
-footer {
-    padding: 40px 20px;
-    background-color: #324879;
-    color: #fff;
-    text-align: center;
-}
-
-.social-media a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 40px auto;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 250px;
-}
-
-.footer-column h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.footer-column ul {
-    padding: 0;
-}
-
-.footer-column ul li a {
-    color: #fff;
-    margin-bottom: 10px;
-    display: block;
-    transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-    color: #F68716;
-}
-
-footer p {
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-/*Pages Css*/
-main {
-    padding: 20px;
-}
-
-.page-icon {
-    text-align: center;
-    font-size: 100px;
-    margin-bottom: 20px;
-    color: #324879;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.content p {
-    line-height: 1.6;
+    .service-title, .feature-title {
+        font-size: 20px;
+    }
 }
