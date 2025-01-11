@@ -430,3 +430,19 @@ h1 {
 .content p {
     line-height: 1.6;
 }
+
+/* Styles for devices smaller than 768px */
+@media only screen and (max-width: 768px) {
+    /* Adjust font size, layout, and other elements */
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
