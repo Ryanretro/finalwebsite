@@ -465,3 +465,8 @@ h1 {
         padding: 12px 0;
     }
 }
+
+.logo-img {
+    max-width: 200px; /* Adjust the size of your logo */
+    height: auto;
+}
