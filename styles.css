@@ -300,9 +300,9 @@ ul {
     background-position: center;
 }
 
-#sea { background-image: url('assets/sea.png'); }
-#land { background-image: url('assets/land.png'); }
-#air { background-image: url('assets/air.png'); }
+#sea { background-image: url('sea.png'); }
+#land { background-image: url('land.png'); }
+#air { background-image: url('air.png'); }
 
 
 
