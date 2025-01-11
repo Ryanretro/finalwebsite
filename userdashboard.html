@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropex Logistics - User Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/side logo with no propel.png" alt="Dropex Logistics">
+        </div>
+        <nav class="navigation">
+            <a href="#profile">Profile</a>
+            <a href="#shipments">My Shipments</a>
+            <a href="#track">Track Shipment</a>
+            <a href="#support">Support</a>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Container -->
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#shipments"><i class="fas fa-box"></i> My Shipments</a></li>
+                <li><a href="#billing"><i class="fas fa-wallet"></i> Billing & Payments</a></li>
+                <li><a href="#support"><i class="fas fa-headset"></i> Support</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <!-- Dashboard Overview -->
+            <section id="dashboard">
+                <h2>Dashboard Overview</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Active Shipments</h3>
+                        <p>3 Shipments</p>
+                    </div>
+                    <div class="card">
+                        <h3>Delivered Shipments</h3>
+                        <p>25 Shipments</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pending Payments</h3>
+                        <p>$150</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shipments Section -->
+            <section id="shipments">
+                <h2>My Shipments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tracking ID</th>
+                            <th>Destination</th>
+                            <th>Status</th>
+                            <th>Delivery Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#DRP12345</td>
+                            <td>New York, USA</td>
+                            <td>In Transit</td>
+                            <td>12th Sep 2024</td>
+                        </tr>
+                        <tr>
+                            <td>#DRP12346</td>
+                            <td>Berlin, Germany</td>
+                            <td>Delivered</td>
+                            <td>8th Sep 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Billing Section -->
+            <section id="billing">
+                <h2>Billing & Payments</h2>
+                <p>Pending Amount: $150</p>
+                <button class="pay-now">Pay Now</button>
+            </section>
+
+            <!-- Support Section -->
+            <section id="support">
+                <h2>Customer Support</h2>
+                <p>If you need any help, please contact our support team via email or call our toll-free number.</p>
+                <button class="contact-support">Contact Support</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

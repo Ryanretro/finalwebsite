@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/loginandregister.css">
+</head>
+
+<body>
+
+    <br><br><br><br><br>
+
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="assets/main logo.png" alt="Dropex Logo">
+        </div>
+
+        <!-- Registration Form -->
+        <form action="register.php" method="post">
+            <h2>Create an Account</h2>
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="mx">Mexico</option>
+                    <option value="br">Brazil</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="it">Italy</option>
+                    <option value="es">Spain</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="tr">Turkey</option>
+                    <option value="cn">China</option>
+                    <option value="in">India</option>
+                    <option value="th">Thailand</option>
+                    <option value="ae">UAE</option>
+                    <option value="za">South Africa</option>
+                    <option value="eg">Egypt</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ug">Uganda</option>
+                    <option value="rw">Rwanda</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="zm">Zambia</option>
+                    <option value="cd">DRC</option>
+                    <option value="tz">Tanzania</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <div class="phone-container">
+                    <select id="country-code" name="country-code" required>
+                        <option value="+1">+1 (US, Canada)</option>
+                        <option value="+52">+52 (Mexico)</option>
+                        <option value="+55">+55 (Brazil)</option>
+                        <option value="+54">+54 (Argentina)</option>
+                        <option value="+56">+56 (Chile)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+49">+49 (Germany)</option>
+                        <option value="+33">+33 (France)</option>
+                        <option value="+39">+39 (Italy)</option>
+                        <option value="+34">+34 (Spain)</option>
+                        <option value="+31">+31 (Netherlands)</option>
+                        <option value="+90">+90 (Turkey)</option>
+                        <option value="+86">+86 (China)</option>
+                        <option value="+91">+91 (India)</option>
+                        <option value="+66">+66 (Thailand)</option>
+                        <option value="+971">+971 (UAE)</option>
+                        <option value="+27">+27 (South Africa)</option>
+                        <option value="+20">+20 (Egypt)</option>
+                        <option value="+254">+254 (Kenya)</option>
+                        <option value="+256">+256 (Uganda)</option>
+                        <option value="+250">+250 (Rwanda)</option>
+                        <option value="+234">+234 (Nigeria)</option>
+                        <option value="+260">+260 (Zambia)</option>
+                        <option value="+243">+243 (DRC)</option>
+                        <option value="+255">+255 (Tanzania)</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone number">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <!-- Agreement Section -->
+            <div class="input-group">
+                <label for="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    I agree to the <a href="termsandconditions.html">Terms and Conditions</a> and <a href="license.html">License Agreement</a>
+                </label>
+            </div>
+
+            <button type="submit">Register</button>
+            <div class="links">
+                <a href="login.html">Already have an account? Log in</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+<br><br><br>
+
+</html>
