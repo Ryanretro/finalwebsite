@@ -331,7 +331,7 @@ footer {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 40px auto;
-    padding-left: 240px; /* Shift the columns to the right */
+    padding-left: 80px; /* Shift the columns to the right */
 }
 
 .footer-column {
