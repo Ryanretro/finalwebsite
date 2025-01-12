@@ -89,17 +89,23 @@ ul {
     margin-bottom: 40px;
 }
 
-.hero .btn {
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
     background-color: #F68716;
     color: #fff;
-    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
-.hero .btn:hover {
+.btn:hover {
     background-color: #D67515;
 }
 
@@ -305,47 +311,6 @@ ul {
 #air { background-image: url('air.png'); }
 
 
-
-/* Contact Section */
-#contact {
-    padding: 80px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #324879;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: auto;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact button {
-    background-color: #F68716;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-#contact button:hover {
-    background-color: #F65D0A;
-}
-
 /* Footer */
 footer {
     padding: 40px 20px;
@@ -362,16 +327,18 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the footer-container */
     gap: 20px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 40px auto;
+    padding-left: 240px; /* Shift the columns to the right */
 }
 
 .footer-column {
     flex: 1;
     min-width: 250px;
+    text-align: left; /* Align links to the left */
 }
 
 .footer-column h3 {
@@ -382,6 +349,7 @@ footer {
 
 .footer-column ul {
     padding: 0;
+    list-style: none; /* Remove bullet points */
 }
 
 .footer-column ul li a {
@@ -400,7 +368,8 @@ footer p {
     font-size: 14px;
 }
 
-/Pages Css/
+
+/*Pages Css*/
 main {
     padding: 20px;
 }
@@ -429,4 +398,19 @@ h1 {
 
 .content p {
     line-height: 1.6;
+}
+
+
+/* Edits */
+/* Center the header content */
+header {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Ensures text inside header is centered */
+}
+
+/* Optional: If you have multiple elements within the header */
+header > * {
+    margin: 0 10px; /* Adds some spacing between elements */
 }
