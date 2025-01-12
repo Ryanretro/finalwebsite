@@ -310,7 +310,6 @@ ul {
 #land { background-image: url('land.png'); }
 #air { background-image: url('air.png'); }
 
-
 /* Footer */
 footer {
     padding: 40px 20px;
@@ -368,8 +367,7 @@ footer p {
     font-size: 14px;
 }
 
-
-/*Pages Css*/
+/* Pages Css */
 main {
     padding: 20px;
 }
@@ -399,8 +397,6 @@ h1 {
 .content p {
     line-height: 1.6;
 }
-
-
 /* Edits */
 /* Center the header content */
 header {
@@ -413,4 +409,78 @@ header {
 /* Optional: If you have multiple elements within the header */
 header > * {
     margin: 0 10px; /* Adds some spacing between elements */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    .services-container, .features-container, .transport-options {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        text-align: center;
+        padding-left: 0; /* Reset padding-left for smaller screens */
+    }
+    .services-container, .features-container, .transport-options {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    .hero {
+        padding: 80px 10px;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .service-card, .feature, .option {
+        margin-bottom: 20px;
+    }
+    .footer-column {
+        text-align: center;
+        padding-left: 0; /* Reset padding-left for smaller screens */
+    }
 }
